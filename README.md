@@ -5,7 +5,6 @@ This is a project that shows an infrastructure built with Docker where it runs:
 
 There is a backup script that backs up the database of CRM and docker compose file in a TrueNas instance in the same network.
 The script use rsync to estabilish connection between Truenas and mantain only the last three backups.
-Even if you wanted, you could modify the script to backs up the configuration files of the various services.
 
 The containerized infrastructure contains:
 - A CRM that users use to work
