@@ -1,4 +1,4 @@
-This project shows an infrastructure built with Docker where it runs:
+**This project shows an infrastructure built with Docker where it runs:**
 * a data collector and logs stack
 * metrics exposure services
 * an EspoCRM instance and MariaDB
@@ -6,12 +6,15 @@ This project shows an infrastructure built with Docker where it runs:
 There is a backup script that backs up in a TrueNas instance in the same network.
 The script use rsync to estabilish connection between Truenas and mantain only the last three backups.
 
-The containerized infrastructure contains:
+**The containerized infrastructure contains:**
+
 - EspoCRM: main CRM application
 - Mariadb: database used by the CRM
 - Node-Exporter: exposes system data
 - CAdvisor: exposes container data
-- Prometheus: collects data from Node-exporter and CAdvidor 
+- Prometheus: collects metrics from Node-exporter and CAdvidor 
 - Promtail: collects logs from system
 - Loki: indexes logs collected by Promtail
 - Grafana: visualizes system dashboards using Prometheus and Node-Exporter
+
+**I should to read the wiki of the project to know more details about this lab!**
