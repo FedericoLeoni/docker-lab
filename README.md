@@ -27,6 +27,7 @@ cd docker-lab
 mkdir -p data/{grafana,prometheus,loki}
 cd docker
 # important: if you need, edit crm-app and crm-db environment variables in docker-compose.yml file
+docker network create frontend, backend, monitoring
 docker compose up -d
 
 ```
