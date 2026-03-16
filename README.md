@@ -18,3 +18,15 @@ The script use rsync to estabilish connection between Truenas and mantain only t
 - Grafana
 
 **I should to read the wiki of the project to know more details about this lab!**
+
+**Set-up the lab:**
+
+``` bash
+git clone https://github.com/FedericoLeoni/Docker-lab
+cd docker-lab
+mkdir -p data/{grafana,prometheus,loki}
+cd docker
+# important: if you need, edit crm-app and crm-db environment variables in docker-compose.yml file
+docker-compose up -d
+
+```
